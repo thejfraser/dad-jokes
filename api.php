@@ -30,6 +30,7 @@ $jokes = [
     'I was thinking of going on an all-almond diet\n\nBut that is just nuts',
     'I wrote a song about a tortilla\n\nIt is really more of a rap'
 ];
+shuffle($jokes);
 $joke = $jokes[array_rand($jokes)];
 $joke = str_replace('\n', '<br />', $joke);
 $response = json_encode(['count' => count($jokes), 'joke' => $joke]);
