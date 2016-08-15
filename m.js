@@ -4,7 +4,7 @@ jQuery(document).ready(function($){
     n=$("body>nav");
     f=$("body>footer");
     j=$("p#joke");
-    x=$("a#load");
+    x=$("a.load");
     pi=parseInt;
     function _(){m.css("min-height",(pi(window.innerHeight)-(eh(n)+eh(f)+ex(m)))+"px");}
     function eh(el){return(pi(el.height())+ex(el))}
